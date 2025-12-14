@@ -33,6 +33,11 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         crearSucursalBtn = new javax.swing.JButton();
         listaSucursalesBtn = new javax.swing.JButton();
         actualizarSucursalBtn = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        registrarActivoBtn = new javax.swing.JButton();
+        revisarActivoBtn = new javax.swing.JButton();
+        registrarTransaccionBtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -59,6 +64,11 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         });
 
         listaClientesBtn.setText("Ver lista de clientes");
+        listaClientesBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                listaClientesBtnActionPerformed(evt);
+            }
+        });
 
         actualizarClienteBtn.setText("Actualizar cliente");
 
@@ -71,6 +81,18 @@ public class VentanaPrincipal extends javax.swing.JFrame {
 
         actualizarSucursalBtn.setText("Actualizar sucursal");
 
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel3.setText("Activos");
+
+        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel4.setText("Transacciones");
+
+        registrarActivoBtn.setText("Registrar activo");
+
+        revisarActivoBtn.setText("Revisar activo");
+
+        registrarTransaccionBtn.setText("Registrar transaccion");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -81,49 +103,65 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                         .addGap(47, 47, 47)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(crearEmpleadoBtn)
-                                .addGap(81, 81, 81)
-                                .addComponent(crearClienteBtn)
-                                .addGap(93, 93, 93)
-                                .addComponent(crearSucursalBtn)
-                                .addGap(0, 0, Short.MAX_VALUE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(22, 22, 22)
                                 .addComponent(Empleados)
                                 .addGap(117, 117, 117)
                                 .addComponent(jLabel2)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(Sucursales)
-                                .addGap(63, 63, 63))))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGap(17, 17, 17))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(215, 215, 215)
-                                .addComponent(jLabel1))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(39, 39, 39)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(actualizarEmpleadoBtn)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(actualizarClienteBtn))
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(listaEmpleadosBtn)
-                                        .addGap(57, 57, 57)
-                                        .addComponent(listaClientesBtn)))
-                                .addGap(61, 61, 61)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(listaSucursalesBtn)
-                                    .addComponent(actualizarSucursalBtn))))
-                        .addGap(0, 33, Short.MAX_VALUE)))
+                                    .addComponent(jLabel1)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(crearEmpleadoBtn)
+                                        .addGap(81, 81, 81)
+                                        .addComponent(crearClienteBtn)))
+                                .addGap(93, 93, 93)
+                                .addComponent(crearSucursalBtn)
+                                .addGap(0, 0, Short.MAX_VALUE))))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(39, 39, 39)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(actualizarEmpleadoBtn)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(actualizarClienteBtn))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(listaEmpleadosBtn)
+                                .addGap(57, 57, 57)
+                                .addComponent(listaClientesBtn)))
+                        .addGap(61, 61, 61)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(listaSucursalesBtn)
+                            .addComponent(actualizarSucursalBtn))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addGap(70, 70, 70))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(161, 161, 161)
+                        .addComponent(jLabel3))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(131, 131, 131)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(registrarActivoBtn)
+                            .addComponent(revisarActivoBtn))))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(133, 133, 133)
+                        .addComponent(jLabel4))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(116, 116, 116)
+                        .addComponent(registrarTransaccionBtn)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(12, 12, 12)
                 .addComponent(jLabel1)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Empleados)
                     .addComponent(jLabel2)
@@ -134,16 +172,27 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                     .addComponent(crearClienteBtn)
                     .addComponent(crearSucursalBtn))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(listaEmpleadosBtn)
-                    .addComponent(listaClientesBtn)
-                    .addComponent(listaSucursalesBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(listaSucursalesBtn, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(listaEmpleadosBtn)
+                        .addComponent(listaClientesBtn)))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(actualizarEmpleadoBtn)
                     .addComponent(actualizarClienteBtn)
                     .addComponent(actualizarSucursalBtn))
-                .addContainerGap(279, Short.MAX_VALUE))
+                .addGap(41, 41, 41)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(jLabel4))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(registrarActivoBtn)
+                    .addComponent(registrarTransaccionBtn))
+                .addGap(18, 18, 18)
+                .addComponent(revisarActivoBtn)
+                .addContainerGap(104, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -154,9 +203,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -167,6 +214,12 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         crearCliente.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_crearClienteBtnActionPerformed
+
+    private void listaClientesBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_listaClientesBtnActionPerformed
+        VentanaListaClientes ventanaClientes = new VentanaListaClientes();
+        ventanaClientes.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_listaClientesBtnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -215,9 +268,14 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     private javax.swing.JButton crearSucursalBtn;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JButton listaClientesBtn;
     private javax.swing.JButton listaEmpleadosBtn;
     private javax.swing.JButton listaSucursalesBtn;
+    private javax.swing.JButton registrarActivoBtn;
+    private javax.swing.JButton registrarTransaccionBtn;
+    private javax.swing.JButton revisarActivoBtn;
     // End of variables declaration//GEN-END:variables
 }
