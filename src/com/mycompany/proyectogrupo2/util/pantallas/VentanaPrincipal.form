@@ -28,10 +28,7 @@
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
-              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-          </Group>
+          <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
       </Group>
     </DimensionLayout>
   </Layout>
@@ -46,14 +43,6 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" attributes="0">
-                                  <Component id="crearEmpleadoBtn" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="81" max="-2" attributes="0"/>
-                                  <Component id="crearClienteBtn" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="93" max="-2" attributes="0"/>
-                                  <Component id="crearSucursalBtn" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                              </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
                                   <Component id="Empleados" min="-2" max="-2" attributes="0"/>
@@ -61,50 +50,81 @@
                                   <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="32767" attributes="0"/>
                                   <Component id="Sucursales" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                                      <Group type="102" attributes="0">
+                                          <Component id="crearEmpleadoBtn" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="81" max="-2" attributes="0"/>
+                                          <Component id="crearClienteBtn" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="93" max="-2" attributes="0"/>
+                                  <Component id="crearSucursalBtn" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
                       <Group type="102" attributes="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
                               <Group type="102" attributes="0">
-                                  <EmptySpace min="-2" pref="215" max="-2" attributes="0"/>
-                                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="actualizarEmpleadoBtn" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
+                                  <Component id="actualizarClienteBtn" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Group type="102" attributes="0">
-                                          <Component id="actualizarEmpleadoBtn" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace max="32767" attributes="0"/>
-                                          <Component id="actualizarClienteBtn" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" attributes="0">
-                                          <Component id="listaEmpleadosBtn" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
-                                          <Component id="listaClientesBtn" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                  </Group>
-                                  <EmptySpace min="-2" pref="61" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="1" attributes="0">
-                                      <Component id="listaSucursalesBtn" min="-2" max="-2" attributes="0"/>
-                                      <Component id="actualizarSucursalBtn" min="-2" max="-2" attributes="0"/>
-                                  </Group>
+                              <Group type="102" attributes="0">
+                                  <Component id="listaEmpleadosBtn" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
+                                  <Component id="listaClientesBtn" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace min="0" pref="33" max="32767" attributes="0"/>
+                          <EmptySpace min="-2" pref="61" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Component id="listaSucursalesBtn" min="-2" max="-2" attributes="0"/>
+                              <Component id="actualizarSucursalBtn" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
+              </Group>
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="161" max="-2" attributes="0"/>
+                          <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="131" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="registrarActivoBtn" min="-2" max="-2" attributes="0"/>
+                              <Component id="revisarActivoBtn" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="133" max="-2" attributes="0"/>
+                          <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="116" max="-2" attributes="0"/>
+                          <Component id="registrarTransaccionBtn" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                   <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="Empleados" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -117,10 +137,12 @@
                       <Component id="crearSucursalBtn" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="listaEmpleadosBtn" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="listaClientesBtn" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="listaSucursalesBtn" alignment="1" min="-2" pref="23" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="listaEmpleadosBtn" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="listaClientesBtn" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
@@ -128,7 +150,19 @@
                       <Component id="actualizarClienteBtn" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="actualizarSucursalBtn" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="279" max="32767" attributes="0"/>
+                  <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="registrarActivoBtn" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="registrarTransaccionBtn" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="revisarActivoBtn" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace pref="104" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -185,6 +219,9 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Ver lista de clientes"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="listaClientesBtnActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="actualizarClienteBtn">
           <Properties>
@@ -212,6 +249,37 @@
         <Component class="javax.swing.JButton" name="actualizarSucursalBtn">
           <Properties>
             <Property name="text" type="java.lang.String" value="Actualizar sucursal"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel3">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="14" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Activos"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel4">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="14" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Transacciones"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="registrarActivoBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Registrar activo"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="revisarActivoBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Revisar activo"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="registrarTransaccionBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Registrar transaccion"/>
           </Properties>
         </Component>
       </SubComponents>
