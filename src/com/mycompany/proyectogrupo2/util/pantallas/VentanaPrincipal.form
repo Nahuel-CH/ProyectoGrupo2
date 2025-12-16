@@ -69,17 +69,14 @@
                       </Group>
                       <Group type="102" attributes="0">
                           <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Group type="102" attributes="0">
-                                  <Component id="actualizarEmpleadoBtn" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="32767" attributes="0"/>
-                                  <Component id="actualizarClienteBtn" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" attributes="0">
-                                  <Component id="listaEmpleadosBtn" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
-                                  <Component id="listaClientesBtn" min="-2" max="-2" attributes="0"/>
-                              </Group>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="listaEmpleadosBtn" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="actualizarEmpleadoBtn" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="actualizarClienteBtn" min="-2" max="-2" attributes="0"/>
+                              <Component id="listaClientesBtn" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="61" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="1" attributes="0">
@@ -147,7 +144,7 @@
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="actualizarEmpleadoBtn" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="actualizarClienteBtn" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="actualizarClienteBtn" alignment="0" min="-2" max="-2" attributes="0"/>
                       <Component id="actualizarSucursalBtn" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
@@ -227,6 +224,9 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Actualizar cliente"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="actualizarClienteBtnActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="Sucursales">
           <Properties>
