@@ -5,8 +5,10 @@
         <group>
             <file>file:/C:/Users/Usuario/Documents/GitHub/ProyectoGrupo2/src/com/mycompany/proyectogrupo2/util/DBConnection.java</file>
             <file>file:/C:/Users/Usuario/Documents/GitHub/ProyectoGrupo2/src/com/mycompany/proyectogrupo2/dao/impl/ActivoDaoImpl.java</file>
-            <file>file:/C:/Users/Usuario/Documents/GitHub/ProyectoGrupo2/src/com/mycompany/proyectogrupo2/model/Activo.java</file>
-            <file>file:/C:/Users/Usuario/Documents/GitHub/ProyectoGrupo2/src/com/mycompany/proyectogrupo2/dao/ActivoDao.java</file>
+            <file>file:/C:/Users/Usuario/Documents/GitHub/ProyectoGrupo2/src/com/mycompany/proyectogrupo2/dao/impl/ClienteDaoImpl.java</file>
+            <file>file:/C:/Users/Usuario/Documents/GitHub/ProyectoGrupo2/src/com/mycompany/proyectogrupo2/model/Cliente.java</file>
+            <file>file:/C:/Users/Usuario/Documents/GitHub/ProyectoGrupo2/src/com/mycompany/proyectogrupo2/util/pantallas/VentanaPrincipal.java</file>
+            <file>file:/C:/Users/Usuario/Documents/GitHub/ProyectoGrupo2/src/com/mycompany/proyectogrupo2/util/pantallas/VentanaCrearCliente.java</file>
         </group>
     </open-files>
 </project-private>

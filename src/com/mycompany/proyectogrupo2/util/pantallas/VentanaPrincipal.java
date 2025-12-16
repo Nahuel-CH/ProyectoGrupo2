@@ -71,6 +71,11 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         });
 
         actualizarClienteBtn.setText("Actualizar cliente");
+        actualizarClienteBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                actualizarClienteBtnActionPerformed(evt);
+            }
+        });
 
         Sucursales.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         Sucursales.setText("Sucursales");
@@ -122,15 +127,13 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                                 .addGap(0, 0, Short.MAX_VALUE))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(39, 39, 39)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(actualizarEmpleadoBtn)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(actualizarClienteBtn))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(listaEmpleadosBtn)
-                                .addGap(57, 57, 57)
-                                .addComponent(listaClientesBtn)))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(listaEmpleadosBtn)
+                            .addComponent(actualizarEmpleadoBtn))
+                        .addGap(50, 50, 50)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(actualizarClienteBtn)
+                            .addComponent(listaClientesBtn))
                         .addGap(61, 61, 61)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(listaSucursalesBtn)
@@ -220,6 +223,12 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         ventanaClientes.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_listaClientesBtnActionPerformed
+
+    private void actualizarClienteBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_actualizarClienteBtnActionPerformed
+        VentanaActualizarCliente actualizarCliente = new VentanaActualizarCliente();
+        actualizarCliente.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_actualizarClienteBtnActionPerformed
 
     /**
      * @param args the command line arguments

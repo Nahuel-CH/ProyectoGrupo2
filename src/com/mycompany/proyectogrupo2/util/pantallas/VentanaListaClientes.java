@@ -4,17 +4,50 @@
  */
 package com.mycompany.proyectogrupo2.util.pantallas;
 
+import com.mycompany.proyectogrupo2.dao.impl.ClienteDaoImpl;
+import com.mycompany.proyectogrupo2.model.Cliente;
+import java.util.List;
+import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableModel;
+
 /**
  *
  * @author Usuario
  */
 public class VentanaListaClientes extends javax.swing.JFrame {
-
+    private ClienteDaoImpl clienteDao;
     /**
      * Creates new form VentanaListaClientes
      */
     public VentanaListaClientes() {
         initComponents();
+        this.clienteDao = new ClienteDaoImpl();
+        cargarClientes();
+    }
+    
+    private void cargarClientes(){
+        try {
+            List<Cliente> clientes = clienteDao.listar();
+            
+            DefaultTableModel modelo = (DefaultTableModel) tablaClientes.getModel();
+            modelo.setRowCount(0);
+            
+            // agrega los clientes
+            
+            for (Cliente cliente : clientes){
+                modelo.addRow(new Object[]{
+                    cliente.getNombreCliente(),
+                    cliente.getApellido(),
+                    cliente.getCedula(),
+                    cliente.getDireccion(),
+                    cliente.getTelefono(),
+                    cliente.getCorreo()
+            });
+            }
+        } catch (Exception e){
+            JOptionPane.showMessageDialog(this, "Error al cargar clientes: " + e.getMessage());
+            e.printStackTrace();
+        }
     }
 
     /**
@@ -29,7 +62,7 @@ public class VentanaListaClientes extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        tablaClientes = new javax.swing.JTable();
         volverBtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -37,7 +70,7 @@ public class VentanaListaClientes extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         jLabel1.setText("Lista de clientes");
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        tablaClientes.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null},
                 {null, null, null, null, null, null},
@@ -48,7 +81,7 @@ public class VentanaListaClientes extends javax.swing.JFrame {
                 "Nombre", "Apellido", "Cedula", "Direccion", "Telefono", "Correo"
             }
         ));
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(tablaClientes);
 
         volverBtn.setText("Volver");
         volverBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -109,46 +142,13 @@ public class VentanaListaClientes extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_volverBtnActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(VentanaListaClientes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(VentanaListaClientes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(VentanaListaClientes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(VentanaListaClientes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
 
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new VentanaListaClientes().setVisible(true);
-            }
-        });
-    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
+    private javax.swing.JTable tablaClientes;
     private javax.swing.JButton volverBtn;
     // End of variables declaration//GEN-END:variables
 }
