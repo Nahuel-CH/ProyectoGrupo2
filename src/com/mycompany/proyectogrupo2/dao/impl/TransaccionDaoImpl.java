@@ -54,4 +54,9 @@ public class TransaccionDaoImpl implements TransaccionDao {
         t.setIdSucursal(String.valueOf(rs.getInt("IdSucursal")));
         return t;
     }
+
+    @Override
+    public List<Transaccion> listar() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }
