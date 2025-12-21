@@ -7,4 +7,6 @@ import java.util.List;
 public interface TransaccionDao {
     int insertar(String tipo, Date fecha, int idEmpleado, int idActivo, int idSucursal) throws Exception;
     List<Transaccion> porActivo(int idActivo) throws Exception;
+
+    public List<Transaccion> listar();
 }
